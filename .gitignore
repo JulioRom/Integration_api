@@ -1,0 +1,13 @@
+# Node
+node_modules
+
+# Build
+
+# environment variables
+.env
+.env.development
+
+#workspace vs code
+conso.code-workspace
+.vscode
+vsc-extensions.txt
