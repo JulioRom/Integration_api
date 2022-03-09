@@ -1,11 +1,11 @@
-let port = 5500
-let project = controller_build
-let repository = ''
+let port = '5500'
+let project = 'Controller-Build'
+let repository = 'git@git.dda.sodimac.cl:dda/hansolo/controller-build.git'
 
 module.exports = {
     apps: [{
         name: `${port} - ${project}`,
-        script: `/var/node/${project}/source/app.js`,
+        script: `/var/node/${project}/source/src/app.js`,
         node_args: '--no-warnings',
         kill_timeout: 3000,
         instances: 1,
@@ -36,3 +36,4 @@ module.exports = {
         }
     }
 }
+
